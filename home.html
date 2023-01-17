@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>home</title>
+    <link rel="sheet" href="Application website.html">
+</head>
+<style>
+
+.sec{
+    background-image: url("Image.JPG");
+    background-size: cover;
+    padding:300px;
+   
+    background-position: center;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+
+.block{
+        border-radius: 25px;
+        margin-right: 400px;
+        font-size: 25;
+       
+}
+.data{
+font-size:20px;
+color:aliceblue;
+padding-top: 0px;
+margin-top: 0px;
+}
+
+</style>
+<body>
+<form>
+<section class="sec">
+    <h1 class="data">  SSID: <span class="block" > </span> <input id="ssid_id" class="block" type="text" required></h2>
+    <h2 class="data">  Password: <span class="block" > </span> <input id="pass_id" class="block" type="password" required></h3>
+    <div class="data"><span class="block"> </span><input id="submit" class="block" type="submit" value="connect" onclick="connect()"></div>
+</section>
+</form>
+<script>
+    
+    document.getElementById("submit").addEventListener("click",btnHandler);
+    // function btnHandler(){
+    // var data = JSON.stringify( {
+    //   "SSID":document.getElementById("ssid_id").value,
+    //   "Password":document.getElementById("pass_id").value
+    //   });
+    // console.log(data);
+
+    //   alert( data );
+                      
+    // }
+    
+    
+    function connect() {
+      document.getElementById("submit").value = "connected";
+    }
+
+   </script>
+
+</body>
+</html>
